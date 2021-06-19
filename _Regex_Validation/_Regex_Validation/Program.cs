@@ -19,9 +19,13 @@ namespace _Regex_Validation
             //string Mail = Console.ReadLine();
             //value.ValidatingMail(Mail);
             //Console.ReadKey();
-            Console.WriteLine("Enter Phone Number:");
-            string intNumber = Console.ReadLine();
-            value.ValidatingPNumber(intNumber);
+           // Console.WriteLine("Enter Phone Number:");
+            //string intNumber = Console.ReadLine();
+            //value.ValidatingPNumber(intNumber);
+            //Console.ReadKey();
+            Console.WriteLine("Enter password:");
+            string strPassword = Console.ReadLine();
+            value.validatingPassword(strPassword);
             Console.ReadKey();
         }
     }

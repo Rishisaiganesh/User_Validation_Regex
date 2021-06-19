@@ -55,5 +55,18 @@ namespace _Regex_Validation
                 Console.WriteLine("Number is Not Valid:" + PNumber);
             }
         }
+        public void validatingPassword(string password)
+        {
+            string strPassword = "[A-Za-z/]{8-10}";
+            if (Regex.IsMatch(password, strPassword))
+            {
+                Console.WriteLine ("valid Password:" + password);
+
+            }
+            else
+            {
+                Console.WriteLine("Password Not Valid:" + password);
+            }
+        }
     }
 }
