@@ -42,5 +42,18 @@ namespace _Regex_Validation
                 Console.WriteLine("Its in Valid mailId");
             }
         }
+        public void ValidatingPNumber(string PNumber)
+        {
+            string intNumber = "^91[0-9]{10}";
+            if (Regex.IsMatch(PNumber, intNumber))
+            {
+                Console.WriteLine("ValidPhoneNumber:" +PNumber);
+
+            }
+            else
+            {
+                Console.WriteLine("Number is Not Valid:" + PNumber);
+            }
+        }
     }
 }
