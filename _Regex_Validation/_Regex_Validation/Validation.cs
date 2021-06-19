@@ -9,7 +9,7 @@ namespace _Regex_Validation
     {
         public void ValidatingName(string Name)
         {
-            string stringValidation = "^[A-Z]{1}[A-Za-z]{3,10}";
+            string stringValidation = "^[A-Z]{1}[A-Za-z]{3,20}";
             if (Regex.IsMatch(Name, stringValidation))
             {
                 Console.WriteLine(Name + "Its Validated");
