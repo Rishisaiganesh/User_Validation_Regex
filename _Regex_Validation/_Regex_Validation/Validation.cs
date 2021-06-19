@@ -59,7 +59,9 @@ namespace _Regex_Validation
         {
             string passwordCharatter = "[A-Za-z0-9]{8}";
             string PasswordOneUpper = "[A-Z]{1}";
-            if (Regex.IsMatch(password, passwordCharatter)&&Regex.IsMatch(password,PasswordOneUpper))
+            string passwordOneNumber = "[0-9]{1}";
+            string passwordSPLCharacter = "[><,.!@#$%^&*[(})]{1}";
+            if (Regex.IsMatch(password, passwordCharatter)&&Regex.IsMatch(password,PasswordOneUpper)&&Regex.IsMatch(password,passwordOneNumber)&&Regex.IsMatch(password,passwordSPLCharacter))
 
             {
                 Console.WriteLine ("valid Password:" + password);
