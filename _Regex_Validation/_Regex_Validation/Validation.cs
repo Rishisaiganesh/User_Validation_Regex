@@ -57,10 +57,9 @@ namespace _Regex_Validation
         }
         public void validatingPassword(string password)
         {
-            string strPassword = "[A-Za-z0-9]{8,10}";
-            string UpperCase = "[A-Z]{1}";
-            string OneInteger = "[0-9]{1}";
-            if (Regex.IsMatch(password, strPassword)&&Regex.IsMatch(password,UpperCase)&&Regex.IsMatch(password,OneInteger))
+            string passwordCharatter = "[A-Za-z0-9]{8}";
+            string PasswordOneUpper = "[A-Z]{1}";
+            if (Regex.IsMatch(password, passwordCharatter)&&Regex.IsMatch(password,PasswordOneUpper))
 
             {
                 Console.WriteLine ("valid Password:" + password);

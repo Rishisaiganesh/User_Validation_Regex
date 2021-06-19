@@ -24,8 +24,8 @@ namespace _Regex_Validation
             //value.ValidatingPNumber(intNumber);
             //Console.ReadKey();
             Console.WriteLine("Enter password:");
-            string strPassword = Console.ReadLine();
-            value.validatingPassword(strPassword);
+            string passwordCharacter = Console.ReadLine();
+            value.validatingPassword(passwordCharacter);
             Console.ReadKey();
         }
     }
